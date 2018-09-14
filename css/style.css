@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+  font-family:'Roboto', sans-serif;
+}
+
+.flexslider {
+  border:none;
+}
+/* move flex control inside picture */
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    z-index: 99;
+}
+
+/* add black circle on icon */
+.flex-direction-nav a {
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* change left arrow icon */
+/* cek here for font-awesome content list */
+.flex-direction-nav a::before {
+    font-family: "fontawesome";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f060';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+.flex-direction-nav a::before {
+    font-family: "fontawesome";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f060';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+/* next-icon */
+.flex-direction-nav a.flex-next::before {
+    content: '\f061';
+}
+
+
+/* always show direction icon */
+/* delete right/left and opacity if you want to auto hide icons */
+.flex-direction-nav .flex-next {
+    text-align: center;
+    right:10px;
+    opacity:1;
+}
+.flexslider:hover .flex-direction-nav .flex-next  {
+    opacity: 1;
+    right: 10px;
+}
+
+.flex-direction-nav .flex-prev {
+    text-align: center;
+    left:10px;
+    opacity:1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev  {
+    opacity: 1;
+    left: 10px;
+}
+
+/* bullet color */
+.flex-control-paging li a {
+  background:rgba(0,0,0,0.8);
+  border:0.5px solid rgba(255,255,255,0.5);
+}
+
+.flex-control-paging li a.flex-active {
+  background:#fff;
+}
+
+.button {
+  bottom:40px;;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.btn-danger {
+  background:#b3241d;
+}
+
+img.image_full{
+   display:block;
+  }
+
+ img.image_mobile{
+  display:none!important;
+ }
+
+@media (max-width: 640px){
+  img.image_full {
+   display:none!important;
+  }
+
+  img.image_mobile {
+   display:block!important;
+  }
+}
+
+.bg-tall {
+  height: 600px;
+}
+
+.bg-small {
+  height: 300px;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.2);
+    position:absolute;
+  top: 0;
+  bottom:0;
+  right:0;
+  left:0;
+
+}
+.link {
+  background-color:rgba(0,0,0,0);
+  position:absolute;
+  top: 0;
+  bottom:0;
+  right:0;
+  left:0;
+    transition: 0.2s linear;
+}
+
+.link:hover {
+background-color:rgba(0,0,0,0.5);
+}
+.caption {
+  position:absolute;
+  color:white;
+    text-shadow: 1px 1px black;
+  font-weight: 700;
+  top:50%;
+  left: 50%;
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  z-index:100;
+  width:90%;
+}
+
+.box1 {
+  background-color: purple;
+position:absolute;
+  top: 2px;
+  bottom: 2px;
+  left:2px;
+  right: 2px;
+}
+
+.bg-surfing {
+  background: url("https://source.unsplash.com/vOdYauqVTVw/350x600") no-repeat center center ;
+  background-size:cover;
+}
+
+.bg-sup {
+  background: url("https://source.unsplash.com/u5vx3Ke0_RM/600x600") no-repeat center center;
+  background-size:cover;
+}
+
+.bg-bodyboard {
+  background: url("https://source.unsplash.com/3HwFjM1aY3o/600x600") no-repeat center center;
+  background-size:cover;
+}
+
+.bg-daypass {
+  background: url("https://source.unsplash.com/Rl9l9mL6Pvs/1200x600") no-repeat center center;
+  background-size:cover;
+}
+
+.bg-seakayak {
+  background: url("https://source.unsplash.com/3fX0FvA-2us/1200x600") no-repeat center center;
+  background-size:cover;
+}
+
+.bg-pulau {
+  background: url("https://source.unsplash.com/YQeTXGRpao4/1200x600") no-repeat center center;
+  background-size:cover;
+}
+
+.course {
+  max-width:750px;
+}
+
+#yoga {
+  background:#faf6f2;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.price {
+/*   color: #f56c6d; */
+}
+
+#yoga h6 {
+  color: #f56c6d;
+}
+
+#yoga h2 {
+  color: #221c25;
+}
+
+#yoga p {
+  color: #7a7a7a;
+}
+
+table th {
+    font-size: 1.066em;
+    font-weight: 400;
+    text-transform: none;
+    font-style: normal;
+    text-align: left;
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+table th + td {
+    text-align: right;
+}
+
+table td {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.bg-yoga {
+  background:url("http://www.californiakiteboarding.com/wp-content/uploads/18_12-6x23_5_AllStar_Sandwich_1131-1.jpg") no-repeat center center;
+  background-size:cover;
+}
+
+@media (max-width:700px) {
+  .left-section {
+  width:100%;
+  margin: 0 auto;
+  }
+  table th {
+    font-size:14px;
+    padding: 0;
+  }
+  table td {
+    padding: 1em 0 1em 0;
+    font-size: 14px;
+  }
+  .btn {
+    width:100%;
+  }
+  .bg-yoga {
+    height:300px;
+  }
+}
+
+.bg-yogaa img {
+  object-fit:cover;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.clients-grid {
+    list-style: none;
+    overflow: hidden;
+}
+
+.nobottommargin {
+    margin-bottom: 0 !important;
+}
+
+.clients-grid li::after{
+    width: 100%;
+    height: 0;
+    top: auto;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px dashed #DDD;
+}
+
+.clients-grid li::before, .clients-grid li::after {
+    content: '';
+    position: absolute;
+}
+
+.clients-grid li::before, .testimonials-grid li::before {
+    height: 100%;
+    top: 0;
+    left: -1px;
+    border-left: 1px dashed #DDD;
+}
+
+.clients-grid.grid-6 li {
+    width: 16.66%;
+}
+
+.clients-grid li {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding: 20px 0;
+    -webkit-backface-visibility: hidden;
+  margin-left:0;
+}
+
+.clients-grid li a, .clients-grid li img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-grid li::after{
+    width: 100%;
+    height: 0;
+    top: auto;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px dashed #DDD;
+}
+
+.clients-grid li::before {
+    height: 100%;
+    top: 0;
+    left: -1px;
+    border-left: 1px dashed #DDD;
+}
+
+.clients-grid li::before, .clients-grid li::after, .testimonials-grid li::before, .testimonials-grid li::after {
+    content: '';
+    position: absolute;
+}
+
+@media (max-width: 576px) {
+    .clients-grid.grid-6 li {
+      width: 50%;
+  }
+}
+
+span {
+  display: block;
+}
+
+.post-thumb {
+  position:relative;
+}
+
+.post-date {
+  position:absolute;
+  left:0;
+  bottom:0;
+  padding: 10px;
+  background-color:white;
+  font-weight:bold;
+}
+
+.post-title {
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+.post-excerpt {
+  line-height:1.7em;
+  font-size:14px;
+}
+
+#footer h5 {
+  padding: 0;
+  margin: 25px 0 10px;
+  color: #fff;
+  line-height: 18px;
+  font-size: 1.33em;
+  font--weight: normal;
+}
+
+#footer a {
+  font-size: 13px;
+  color:#999999;
+  line-height: 22px;
+/*   text-transform: uppercase; */
+}
+
+#footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer a .fa:hover {
+  opacity: 1;
+  text-decoration: none;
+
+}
+
+
+
+p {
+  font-size: 14px;
+}
+
+.btn-danger {
+  background-color: #b3241d;
+  cursor:pointer;
+}
+
+#instagram {
+      background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-social-icons {
+    width: 100%;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+  padding-left:0px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+.copyright {
+  background: #322f30;
+  color: white;
+  height: 40px;
+  p.small {
+    line-height: 30px;
+  }
+}
+
+
+/* banner & course */
+.banner {
+background-size: cover;
+background-position: left center;
+height: 250px;
+position: relative;
+resize: vertical;
+}
+
+.banner .container h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 0 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-transform: none;
+    position: relative;
+}
+
+.banner-sup {
+  background-image: url('../assets/images/surfing-header.jpg');
+}
+
+
+.text-sidemenu {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0;
+  display: block;
+  padding-left: 10px;
+  text-align: left;
+  color: #333;
+  text-decoration: none;
+  line-height: normal;
+}
+
+.active {
+  color: #b3241d!important;
+}
+
+.left-menu ul {
+  padding-left: 10px;
+}
+
+.left-menu ul li {
+  list-style: none;
+  border-bottom: 1px solid gainsboro;
+  padding: 5px 10px;
+}
+
+.left-menu ul li a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #666;
+  text-transform: none;
+  /* border-top: 1px solid #d2d2d3; */
+  font-weight: bold;
+  display: block;
+  pointer-events: auto;
+  position: relative;
+}
+
+.left-menu ul li a:hover {
+  color:#b3241d;
+  text-decoration:none;
+}
+
+.course-title {
+  font-size: 30px;
+margin-bottom: 0;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #333;
+}
+
+.course-desc {
+    line-height: 1.8;
+    margin: 8px 0 0 0;
+    color: #777;
+    font-size: 16px;
+}
+
+.card-title {
+    color: #b3241d;
+}
+
+#book a {
+    display: inline-block;
+    margin-right: 10px;
+    color:#343a40;
+}
