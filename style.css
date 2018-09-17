@@ -554,7 +554,7 @@ resize: vertical;
 }
 
 .banner-sup {
-  background-image: url('../assets/images/surfing-header.jpg');
+  background-image: url('assets/images/surfing-header.jpg');
 }
 
 
@@ -627,3 +627,25 @@ color: #333;
     margin-right: 10px;
     color:#343a40;
 }
+
+.address p {
+  line-height: 30px;
+ margin: 0 0 15px;
+font-size: 15px;
+color: #727272;
+font-weight: 400;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 30%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
